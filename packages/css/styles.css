@@ -516,42 +516,40 @@ img {
   background-color: var(--first-color);
 }
 
+.skills__unity3d {
+  width: 90%;
+}
+
+.skills__csharp {
+  width: 90%;
+}
+
 .skills__android {
-  width: 70%;
+  width: 85%;
 }
 
-.skills__wordpress {
-  width: 70%;
+.skills__ios {
+  width: 75%;
 }
 
-.skills__python {
-  width: 70%;
-}
-.skills__unity3d{
-  width: 90%;
-}
-.skills__csharp{
-  width: 90%;
+.skills__admob {
+  width: 85%;
 }
 
-.skills__java {
-  width: 60%;
+.skills__unityads {
+  width: 85%;
 }
 
-.skills__cplusplus {
-  width: 40%;
+.skills__steam {
+  width: 75%;
 }
 
-.skills__google {
-  width: 70%;
-}
-
-.skills__blender {
+.skills__git {
   width: 80%;
 }
 
-.skills__google {
-  width: 70%;
+.skills__firebase {
+  width: 75%;
 }
 
 .skills__close .skills__list {
@@ -755,6 +753,26 @@ img {
   justify-self: center;
 }
 
+.portfolio__tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: var(--smaller-font-size);
+  font-weight: var(--font-medium);
+  color: var(--first-color);
+  background-color: rgba(var(--first-color-rgb, 106, 90, 205), 0.1);
+  border: 1px solid var(--first-color);
+  border-radius: 0.25rem;
+  padding: 0.15rem 0.5rem;
+  margin-bottom: var(--mb-0-5);
+}
+
+.portfolio__tag--company {
+  color: #e07b39;
+  border-color: #e07b39;
+  background-color: rgba(224, 123, 57, 0.1);
+}
+
 .portfolio__title {
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-0-5);
@@ -762,6 +780,32 @@ img {
 
 .portfolio__description {
   margin-bottom: var(--mb-0-75);
+}
+
+.portfolio__buttons {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.portfolio__button--apple {
+  background-color: #000;
+  color: #fff;
+}
+
+.portfolio__button--apple:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+.portfolio__button--steam {
+  background-color: #1b2838;
+  color: #c7d5e0;
+}
+
+.portfolio__button--steam:hover {
+  background-color: #2a475e;
+  color: #fff;
 }
 
 .portfolio__button:hover .button__icon {
@@ -785,6 +829,71 @@ img {
 .swiper-button-next {
   right: -0.5rem;
 }
+
+/*==================== OTHER GAMES ====================*/
+.othergames {
+  margin-top: 3rem;
+}
+
+.othergames__title {
+  font-size: var(--h3-font-size);
+  color: var(--title-color);
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+
+.othergames__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.othergames__card {
+  background-color: var(--container-color);
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  border-radius: 0.75rem;
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.3s;
+}
+
+.othergames__card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.othergames__name {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+  margin: 0.25rem 0;
+}
+
+.othergames__desc {
+  font-size: var(--smaller-font-size);
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.othergames__btn {
+  align-self: flex-start;
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.othergames__btn:hover {
+  background-color: #c0392b;
+  color: #fff;
+}
+
+@media screen and (max-width: 568px) {
+  .othergames__grid {
+    grid-template-columns: 1fr;
+  }
+}
+/*==================== END OTHER GAMES ====================*/
 
 .swiper-container-horizontal > .swiper-pagination-bullets {
   bottom: -2.5rem;
